@@ -1,45 +1,47 @@
 class Formateur {
     private id_form: number;
-    private nom_form: string;
-    private email_form: string;
-    private mdp_form: string;
+    private nom_form: string | null;
+    private email_form: string | null;
+    private mdp_form: string | null;
 
-    constructor(id_form: number, nom_form: string, email_form: string, mdp_form: string) {
+    constructor(id_form: number, nom_form: string | null, email_form: string | null, mdp_form: string | null) {
         this.id_form = id_form;
         this.nom_form = nom_form;
         this.email_form = email_form;
         this.mdp_form = mdp_form;
     }
 
+    // Getters
     getIdForm(): number {
         return this.id_form;
     }
 
+    getNomForm(): string | null {
+        return this.nom_form;
+    }
+
+    getEmailForm(): string | null {
+        return this.email_form;
+    }
+
+    getMdpForm(): string | null {
+        return this.mdp_form;
+    }
+
+    // Setters
     setIdForm(id_form: number): void {
         this.id_form = id_form;
     }
 
-    getNomForm(): string {
-        return this.nom_form;
-    }
-
-    setNomForm(nom_form: string): void {
+    setNomForm(nom_form: string | null): void {
         this.nom_form = nom_form;
     }
 
-    getEmailForm(): string {
-        return this.email_form;
-    }
-
-    setEmailForm(email_form: string): void {
+    setEmailForm(email_form: string | null): void {
         this.email_form = email_form;
     }
 
-    getMdpForm(): string {
-        return this.mdp_form;
-    }
-
-    setMdpForm(mdp_form: string): void {
+    setMdpForm(mdp_form: string | null): void {
         this.mdp_form = mdp_form;
     }
 }

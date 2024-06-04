@@ -1,11 +1,11 @@
 class Groupe {
     private id_groupe: number;
     private id_tp: number | null;
-    private nom: string;
-    private descriptions: string;
-    private date: Date;
+    private nom: string | null;
+    private descriptions: string | null;
+    private date: Date | null;
 
-    constructor(id_groupe: number, id_tp: number | null, nom: string, descriptions: string, date: Date) {
+    constructor(id_groupe: number, id_tp: number | null, nom: string | null, descriptions: string | null, date: Date | null) {
         this.id_groupe = id_groupe;
         this.id_tp = id_tp;
         this.nom = nom;
@@ -13,43 +13,45 @@ class Groupe {
         this.date = date;
     }
 
+    // Getters
     getIdGroupe(): number {
         return this.id_groupe;
     }
 
+    getIdTP(): number | null {
+        return this.id_tp;
+    }
+
+    getNom(): string | null {
+        return this.nom;
+    }
+
+    getDescriptions(): string | null {
+        return this.descriptions;
+    }
+
+    getDate(): Date | null {
+        return this.date;
+    }
+
+    // Setters
     setIdGroupe(id_groupe: number): void {
         this.id_groupe = id_groupe;
     }
 
-    getIdTp(): number | null {
-        return this.id_tp;
-    }
-
-    setIdTp(id_tp: number | null): void {
+    setIdTP(id_tp: number | null): void {
         this.id_tp = id_tp;
     }
 
-    getNom(): string {
-        return this.nom;
-    }
-
-    setNom(nom: string): void {
+    setNom(nom: string | null): void {
         this.nom = nom;
     }
 
-    getDescriptions(): string {
-        return this.descriptions;
-    }
-
-    setDescriptions(descriptions: string): void {
+    setDescriptions(descriptions: string | null): void {
         this.descriptions = descriptions;
     }
 
-    getDate(): Date {
-        return this.date;
-    }
-
-    setDate(date: Date): void {
+    setDate(date: Date | null): void {
         this.date = date;
     }
 }

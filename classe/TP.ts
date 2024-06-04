@@ -1,45 +1,47 @@
 class TP {
-    private id_tp: number;
-    private nom_tp: string;
-    private description: string;
-    private mdp_org: string;
+    private id_TP: number;
+    private nom_TP: string | null;
+    private description: string | null;
+    private mdp_org: string | null;
 
-    constructor(id_tp: number, nom_tp: string, description: string, mdp_org: string) {
-        this.id_tp = id_tp;
-        this.nom_tp = nom_tp;
+    constructor(id_TP: number, nom_TP: string | null, description: string | null, mdp_org: string | null) {
+        this.id_TP = id_TP;
+        this.nom_TP = nom_TP;
         this.description = description;
         this.mdp_org = mdp_org;
     }
 
-    getIdTp(): number {
-        return this.id_tp;
+    // Getters
+    getIdTP(): number {
+        return this.id_TP;
     }
 
-    setIdTp(id_tp: number): void {
-        this.id_tp = id_tp;
+    getNomTP(): string | null {
+        return this.nom_TP;
     }
 
-    getNomTp(): string {
-        return this.nom_tp;
-    }
-
-    setNomTp(nom_tp: string): void {
-        this.nom_tp = nom_tp;
-    }
-
-    getDescription(): string {
+    getDescription(): string | null {
         return this.description;
     }
 
-    setDescription(description: string): void {
-        this.description = description;
-    }
-
-    getMdpOrg(): string {
+    getMdpOrg(): string | null {
         return this.mdp_org;
     }
 
-    setMdpOrg(mdp_org: string): void {
+    // Setters
+    setIdTP(id_TP: number): void {
+        this.id_TP = id_TP;
+    }
+
+    setNomTP(nom_TP: string | null): void {
+        this.nom_TP = nom_TP;
+    }
+
+    setDescription(description: string | null): void {
+        this.description = description;
+    }
+
+    setMdpOrg(mdp_org: string | null): void {
         this.mdp_org = mdp_org;
     }
 }

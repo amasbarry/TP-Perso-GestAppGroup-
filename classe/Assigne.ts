@@ -11,7 +11,7 @@ class Assigne {
         this.date = date;
     }
 
-    // Getters et setters
+    // Getters
     getIdAssigne(): number {
         return this.id_assigne;
     }
@@ -26,6 +26,11 @@ class Assigne {
 
     getDate(): Date | null {
         return this.date;
+    }
+
+    // Setters
+    setIdAssigne(id_assigne: number): void {
+        this.id_assigne = id_assigne;
     }
 
     setIdGroupe(id_groupe: number | null): void {
