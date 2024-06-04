@@ -1,4 +1,4 @@
-class Formateur {
+export class Formateur {
     private id_form: number;
     private nom_form: string | null;
     private email_form: string | null;

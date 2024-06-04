@@ -1,4 +1,4 @@
-class Groupe {
+export class Groupe {
     private id_groupe: number;
     private id_tp: number | null;
     private nom: string | null;

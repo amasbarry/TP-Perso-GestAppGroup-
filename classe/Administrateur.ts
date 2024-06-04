@@ -1,4 +1,4 @@
-class Administrateur {
+export class Administrateur {
     private id_admin: number;
     private nom_admin: string | null;
     private email_admin: string | null;

@@ -1,4 +1,4 @@
-class Creation {
+export class Creation {
     private id_creation: number;
     private id_form: number | null;
     private id_TP: number | null;
