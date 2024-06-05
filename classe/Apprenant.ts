@@ -1,4 +1,4 @@
-class Apprenant {
+export class Apprenant {
     private id_appren: number;
     private id_groupe: number | null;
     private nom_appren: string | null;

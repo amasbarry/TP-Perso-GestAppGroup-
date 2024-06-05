@@ -1,4 +1,4 @@
-class Assigne {
+export class Assigne {
     private id_assigne: number;
     private id_groupe: number | null;
     private id_TP: number | null;

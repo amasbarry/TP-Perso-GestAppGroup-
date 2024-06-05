@@ -1,4 +1,4 @@
-class Gestion {
+export class Gestion {
     private id_gestion: number;
     private id_form: number | null;
     private id_groupe: number | null;

@@ -1,4 +1,4 @@
-class TP {
+export class TP {
     private id_TP: number;
     private nom_TP: string | null;
     private description: string | null;
