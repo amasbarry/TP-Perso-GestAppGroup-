@@ -1,8 +1,10 @@
 {
   "devDependencies": {
+    "@types/node": "^20.12.11",
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "readline-sync": "^1.4.10"
   }
 }
